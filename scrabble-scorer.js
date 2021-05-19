@@ -129,7 +129,7 @@ function transform(oldScore) {
 };
 
 let newPointStructure = transform(oldPointStructure);
-newPointStructure[" "] = 0;
+// newPointStructure[" "] = 0;
 
 function runProgram() {
    initialPrompt();
