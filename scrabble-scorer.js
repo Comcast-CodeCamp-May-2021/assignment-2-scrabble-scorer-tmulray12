@@ -61,9 +61,10 @@ function simpleScore(word) {
 
 function vowelBonusScore(word) {
   word = word.toUpperCase();
+  vowelbonusScoreArray = word.split("");
   let totalPointValue = 0;
   for (let i = 0; i < word.length; i++) {
-    if (enteredWord[i] == "a" || enteredWord[i] == "e" || enteredWord[i] == "i" || enteredWord[i] == "o" || enteredWord[i] =="u") {
+    if (vowelbonusScoreArray[i] === "A" || vowelbonusScoreArray[i] === "E" || vowelbonusScoreArray[i] === "I" || vowelbonusScoreArray[i] === "O" || vowelbonusScoreArray[i] === "U") {
       totalPointValue += 3;
     } else {
       totalPointValue ++;
